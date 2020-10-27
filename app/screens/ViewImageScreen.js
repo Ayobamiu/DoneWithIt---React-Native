@@ -13,7 +13,7 @@ function ViewImageScreen(props) {
       <View style={styles.deleteIcon}>
         <MaterialCommunityIcons
           name="trash-can-outline"
-          color="white"
+          color={colors.white}
           size={35}
         />
       </View>

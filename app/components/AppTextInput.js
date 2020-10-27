@@ -3,6 +3,7 @@ import { Platform, StyleSheet, TextInput, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import defultStyles from "../config/styles";
+import colors from "../config/colors";
 
 function AppTextInput({ icon, ...otherProps }) {
   return (
@@ -11,7 +12,7 @@ function AppTextInput({ icon, ...otherProps }) {
         <MaterialCommunityIcons
           name={icon}
           size={20}
-          color={defultStyles.colors.medium}
+          color={colors.medium}
           style={styles.icon}
         />
       )}

@@ -16,7 +16,11 @@ function AppTextInput({ icon, ...otherProps }) {
           style={styles.icon}
         />
       )}
-      <TextInput style={defultStyles.text} {...otherProps} />
+      <TextInput
+        placeholderTextColor={defultStyles.colors.medium}
+        style={[defultStyles.text, styles.full_width]}
+        {...otherProps}
+      />
     </View>
   );
 }
@@ -34,5 +38,6 @@ const styles = StyleSheet.create({
   icon: {
     marginRight: 10,
   },
+  full_width: { flex: 1 },
 });
 export default AppTextInput;

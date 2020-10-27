@@ -2,7 +2,7 @@ import React from "react";
 import { useFormikContext } from "formik";
 
 import AppTextInput from "../AppTextInput";
-import { ErrorMessages } from "../forms";
+import ErrorMessages from "./ErrorMessages";
 
 function AppFormField({ name, ...otherProps }) {
   const { handleChange, errors, setFieldTouched, touched } = useFormikContext();

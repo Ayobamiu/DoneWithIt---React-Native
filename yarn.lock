@@ -2508,6 +2508,14 @@
     "fbjs" "1.0.0"
     "fontfaceobserver" "^2.1.0"
 
+"expo-image-picker@~9.1.0":
+  "integrity" "sha512-Etz2OQhRflfx+xFbSdma8QLZsnV/yq0M/yqYlsi3/RLiWAQYM/D/VmRfDDPiG10gm+KX3Xb5iKplNjPrWeTuQg=="
+  "resolved" "https://registry.npmjs.org/expo-image-picker/-/expo-image-picker-9.1.1.tgz"
+  "version" "9.1.1"
+  dependencies:
+    "expo-permissions" "~9.3.0"
+    "uuid" "7.0.2"
+
 "expo-keep-awake@~8.3.0":
   "integrity" "sha512-zrMsvZLHColfSex5Yf6h5vw3mgJiG48FX36+fOXUqq/erCtDkqY2NB7PmhDaj6lWRJ0OuXa90uYXNveXBJyhfA=="
   "resolved" "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-8.3.0.tgz"
@@ -2532,7 +2540,7 @@
   "resolved" "https://registry.yarnpkg.com/expo-location/-/expo-location-9.0.1.tgz"
   "version" "9.0.1"
 
-"expo-permissions@~9.3.0":
+"expo-permissions@^9.3.0", "expo-permissions@~9.3.0":
   "integrity" "sha512-ylSJZVvEGJVFTKsFrUL2S6gCvFt+/o8TJ3xT4WaMjHe2/2Z7R8ng6NR47Kt54t7XBIV/SZ7DIY9uRiR7TPuNYA=="
   "resolved" "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-9.3.0.tgz"
   "version" "9.3.0"
@@ -5659,6 +5667,11 @@
   "integrity" "sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg=="
   "resolved" "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz"
   "version" "7.0.3"
+
+"uuid@7.0.2":
+  "integrity" "sha512-vy9V/+pKG+5ZTYKf+VcphF5Oc6EFiu3W8Nv3P3zIh0EqVI80ZxOzuPfe9EHjkFNvf8+xuTHVeei4Drydlx4zjw=="
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-7.0.2.tgz"
+  "version" "7.0.2"
 
 "vary@~1.1.2":
   "integrity" "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="

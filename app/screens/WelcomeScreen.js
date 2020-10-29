@@ -4,7 +4,7 @@ import AppButton from "../components/AppButton";
 
 import colors from "../config/colors";
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       blurRadius={5}
@@ -16,8 +16,12 @@ function WelcomeScreen(props) {
         <Text style={styles.tagline}>Sell what you don't need</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <AppButton title="Login" />
-        <AppButton title="Sign up" color="seconadry" />
+        <AppButton title="Login" onPress={() => navigation.navigate("Login")} />
+        <AppButton
+          title="Sign up"
+          color="seconadry"
+          onPress={() => navigation.navigate("Register")}
+        />
       </View>
     </ImageBackground>
   );

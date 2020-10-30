@@ -12,8 +12,9 @@ import AccountScreen from "./app/screens/AccountScreen";
 import AuthNavigator from "./app/navigation/AuthNavigator";
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
+import TestList from "./app/api/test";
 
-const Link = () => { 
+const Link = () => {
   const navigation = useNavigation();
   return (
     <Screen>
@@ -111,8 +112,11 @@ const MainTab = () => (
 
 export default function App() {
   return (
-    <NavigationContainer theme={navigationTheme}>
-      <AppNavigator />
-    </NavigationContainer>
+    // <NavigationContainer theme={navigationTheme}>
+    //   <AppNavigator />
+    // </NavigationContainer>
+    <Screen>
+      <TestList />
+    </Screen>
   );
 }

@@ -1,20 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { View, StyleSheet, Text, Button, TextInput } from "react-native";
+import Hello from "./Hello";
 import { useFetch } from "./useFetch";
 
 function TestList(props) {
-  const [count, setCount] = useState(0);
+  const number = Math.floor(Math.random() * 1000);
+  const [count, setCount] = useState(number);
   const { data, loading } = useFetch(`http://numbersapi.com/${count}/trivia`);
+  const [showHello, setShowHello] = useState(true);
+  const inputRef = useRef();
   return (
     <View style={styles.container}>
-      <Button
+      {/* <Button
         title="New Fact"
-        onPress={() => setCount(Math.floor(Math.random() * 100))}
+        onPress={() => setCount(Math.floor(Math.random() * 1000))}
       />
-
       <View style={styles.fact}>
-        <Text style={styles.txt}>{loading ? "Loading..." : data}</Text>
-      </View>
+        <Text style={styles.txt}>
+          {loading ? "Getting a fun fact..." : data}
+        </Text>
+      </View> */}
+      <View style={styles.fact}>{showHello && <Hello />}</View>
+      <Button title="Toggle" onPress={() => setShowHello(!showHello)} />
+      <TextInput ref={inputRef} style={styles.textInput} placeholder="Email" />
+      <Button title="Focus" onPress={() => inputRef.current.focus()} />
     </View>
   );
 }
